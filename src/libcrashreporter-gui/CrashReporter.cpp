@@ -24,14 +24,7 @@
 #include <QDir>
 #include <QDateTime>
 
-// #include "utils/TomahawkUtils.h"
-
 #include "ui_CrashReporter.h"
-
-
-// #define LOGFILE TomahawkUtils::appLogDir().filePath( "Tomahawk.log" ).toLocal8Bit()
-#define RESPATH ":/data/"
-#define PRODUCT_NAME "WaterWolf"
 
 CrashReporter::CrashReporter( const QUrl& url, const QStringList& args )
 : m_ui( 0 )

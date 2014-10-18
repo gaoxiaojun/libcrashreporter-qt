@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>376</width>
-    <height>216</height>
+    <width>427</width>
+    <height>266</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -26,19 +26,10 @@
    <bool>false</bool>
   </property>
   <layout class="QVBoxLayout">
-   <property name="spacing">
-    <number>6</number>
-   </property>
-   <property name="margin">
-    <number>9</number>
-   </property>
    <item>
     <layout class="QHBoxLayout" name="hboxLayout">
      <property name="spacing">
       <number>12</number>
-     </property>
-     <property name="margin">
-      <number>0</number>
      </property>
      <item>
       <widget class="QLabel" name="logoLabel">
@@ -77,7 +68,7 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sorry!&lt;/span&gt; Tomahawk crashed. Please tell us about it! Tomahawk has created an error report for you that can help improve the stability in the future. You can now send this report directly to the Tomahawk developers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sorry!&lt;/span&gt; QTrader crashed. Please tell us about it! QTrader has created an error report for you that can help improve the stability in the future. You can now send this report directly to the QTrader developers.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -144,9 +135,6 @@
      <property name="spacing">
       <number>0</number>
      </property>
-     <property name="margin">
-      <number>0</number>
-     </property>
      <item>
       <widget class="QLabel" name="progressLabel">
        <property name="sizePolicy">
@@ -164,9 +152,6 @@
       <layout class="QHBoxLayout">
        <property name="spacing">
         <number>9</number>
-       </property>
-       <property name="margin">
-        <number>0</number>
        </property>
        <item>
         <widget class="QProgressBar" name="progressBar">
