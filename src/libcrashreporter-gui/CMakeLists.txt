@@ -2,9 +2,9 @@ set(crashreporter_SOURCES CrashReporter.cpp)
 set(crashreporter_UI CrashReporter.ui)
 set(crashreporter_RC ../../resources.qrc)
 
-qt_wrap_ui( crashreporter_UI_HEADERS ${crashreporter_UI} )
+qt5_wrap_ui( crashreporter_UI_HEADERS ${crashreporter_UI} )
 
-include_directories( ${CMAKE_CURRENT_BINARY_DIR} ${QT_INCLUDES} )
+include_directories( ${CMAKE_CURRENT_BINARY_DIR} )
 
 add_library(crashreporter-gui STATIC
     ${crashreporter_SOURCES}
@@ -15,8 +15,9 @@ add_library(crashreporter-gui STATIC
 
 
 target_link_libraries(crashreporter-gui
-    ${QT_QTGUI_LIBRARY}
-    ${QT_QTNETWORK_LIBRARY}
+    Qt5::Core
+    Qt5::Widgets
+    Qt5::Network
 )
 
 set_target_properties(crashreporter-gui PROPERTIES AUTOMOC ON)
@@ -25,4 +26,3 @@ set_target_properties(crashreporter-gui PROPERTIES AUTOMOC ON)
 #    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
 #)
 
-qt5_use_modules(crashreporter-gui Core Widgets Network)
